@@ -1,0 +1,18 @@
+from _typeshed import Self
+from msilib.schema import SelfReg
+
+
+class Player: definit(self, name): Player
+Self.name = name
+self.avoid_list = l
+def add_to_avoid_list(self, player_to_avoid):
+    SelfReg.avoid_list.append (player_to_avoid) def can _match_with(self, other_player):
+    return other_player.name not in self.avoid_list
+#Sample usage
+player1 = Player ("Player1") player2 = Player ("Player2") player3 = Player ("Player3")
+player1.add_to_avoid_list(player2.name)
+
+if player1.can_match_with(player2): print(f"{player1.name} can match with (player2.name)") 
+else: print(f"{player1.name} cannot match with (player2.name")
+if player1.can_match_with(player3): print(f"{player1.name} can match with (player3.name)") 
+else: print (f"(player1.name) cannot match with (player3.name)")
